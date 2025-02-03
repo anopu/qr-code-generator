@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR-Code Generator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+   
 </head>
 <body>
     <div class="wrapper">
-        <form id="qrCodeForm" action="" method="get">
+        <form id="qrCodeForm" method="get">
             <label for="qrInput">Enter text or URL</label>
             <br>
             <input type="text" id="qrInput" name="qrInput" placeholder="Example text">
             <br>
-            <input type="submit" id="qrSubmit" value="Generate QR-Code!">
+            <button type="submit" id="qrSubmit">Generate QR-Code!</button>
+            <div id="qrcode">
+
+            </div>
         </form>
     </div>
     <div class="footer">
         <p>A personal project by Anotai</p>
     </div>
 </body>
+<script src="index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.4.4/qrcode.js" integrity="sha512-oxrVyBhqnzQ0BzuM0A/6dEIk0alz0p4SpDRaWvtuUoarIc8rnL5lVniHG5Dp21MRFojcQcmKHjaskNXhSaUPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
