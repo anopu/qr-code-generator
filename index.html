@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR-Code Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="" method="get">
-        <p>Enter text or URL</p>
-        <input type="text" id="input">
-        <input type="submit" value="Generate QR-Code!">
-    </form>
+    <div class="wrapper">
+        <form action="" method="get">
+            <label for="qrInput">Enter text or URL</label>
+            <br>
+            <input type="text" id="qrInput" name="qrInput" placeholder="Example text">
+            <br>
+            <input type="submit" id="qrSubmit" value="Generate QR-Code!">
+        </form>
+    </div>
+    <div class="footer">
+        <p>A personal project by Anotai</p>
+    </div>
 </body>
-<footer>
-    <p>A personal project by Anotai</p>
-</footer>
+
 </html>
